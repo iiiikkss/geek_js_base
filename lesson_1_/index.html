@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    //Задание №1 
+        let Tc = 24.0;
+        let Tf = 0;
+        Tf = 9 / 5 * Tc + 32;
+        console.log('Температура в Фарингейтах ' + Tf);
+    //Задание №2    
+        
+        let name = 'Василий';
+        let admin = name;
+        console.log(admin);
+
+
+    //Задание №3
+
+    let x = 10 + 10 + "10"; //Сначала складываются переменые типа число, а затем преобразуются в строку
+    console.log('x= ' + x);//x= 2010
+    let y = 10 + "10" + 10;//Число сразу превращается в строку, и второе действие это присоединение числа к строке
+    console.log('y= ' + y);//y= 101010
+    let c = 10 + 10 + + "10";//Втрой плюс во втором действие второй плюс конвертирует строку в число
+    console.log('c= ' + c);//c= 30
+    let n = 10 / -""; //Значение равно - бесконечость
+    console.log('n= ' + n) //n= -Infinity
+    let z = 10/ +"2,5";// Результат неопределённая мат операция
+    console.log('z= ' + z)//z= NaN
+
+    </script>
+</body>
+</html>
