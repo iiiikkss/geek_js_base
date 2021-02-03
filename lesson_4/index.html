@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let max = 999;
+        let digit ={
+            number: +prompt('Введите число от 0 до 999'),
+            units: 0,
+            tens: 0,
+            hundreds: 0,
+        };
+        if(digit.number <= 9){
+            digit.units = digit.number;
+        } else if (digit.number<= max ){
+            digit.units = Math.floor(digit.number % 10);
+            digit.tens = Math.floor(digit.number/10 % 10);
+            digit.hundreds = Math.floor(digit.number/100 % 10);
+        }else{
+            digit.number = 0;
+            console.log('Вы ввели число за диапазоном 0 - 999');
+        }
+        // Первый вариант вывода
+        for(const key in digit){
+          console.log(digit[key])
+        }
+        //Второй вариант вывода
+        console.log('Введёное число: ' + digit.number);
+        console.log('Единицы: ' + digit.units);
+        console.log('Десятки: ' + digit.tens);
+    </script>
+    
+</body>
+</html>
