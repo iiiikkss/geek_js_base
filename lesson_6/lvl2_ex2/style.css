@@ -1,0 +1,7 @@
+.message {
+    width: 150px;
+    padding: 20px;
+    background: rgb(136, 136, 114);
+    border: 1px solid greenyellow;
+    display: none;
+}
